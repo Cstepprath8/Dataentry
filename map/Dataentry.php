@@ -9,7 +9,7 @@ $projectnaam = readline("Wat is het project naam: ");
 $aantalUren = readline("Vul de aantal uren in: ");
 
 // Bestandspad voor de CSV
-$file = "C:\School map\SmoelenBoek\Dataentry\dataentry.csv";
+$file = "dataentry.csv";
 
 $handle = fopen($file, "a+");
 
@@ -20,6 +20,6 @@ if ($handle !== false) {
 
 }
 
-echo readfile("dataentry.csv");
+echo readfile($file);
 
 ?>
